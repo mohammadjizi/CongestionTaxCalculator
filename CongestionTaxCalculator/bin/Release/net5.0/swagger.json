@@ -1,0 +1,90 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "CongestionTaxCalculator",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/TaxCalculator": {
+      "post": {
+        "tags": [
+          "TaxCalculator"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/TaxCalculationRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TaxCalculationResponse"
+            }
+          },
+          "500": {
+            "description": "Server Error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "TaxCalculationRequest": {
+      "type": "object",
+      "properties": {
+        "vehicleType": {
+          "type": "string"
+        },
+        "dates": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "TaxInfo": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "value": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "TaxCalculationResponse": {
+      "type": "object",
+      "properties": {
+        "totalTax": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "taxInfoList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TaxInfo"
+          }
+        }
+      }
+    }
+  }
+}

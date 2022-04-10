@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CongestionTaxCalculator", "CongestionTaxCalculator\CongestionTaxCalculator.csproj", "{55B3E89C-2AF1-490E-A2B8-9013224345CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaskCalculator.Test", "CongestionTaskCalculator.Test\CongestionTaskCalculator.Test.csproj", "{EAFC8B78-9B41-4644-BD31-5E93CD895291}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55B3E89C-2AF1-490E-A2B8-9013224345CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B3E89C-2AF1-490E-A2B8-9013224345CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B3E89C-2AF1-490E-A2B8-9013224345CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B3E89C-2AF1-490E-A2B8-9013224345CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFC8B78-9B41-4644-BD31-5E93CD895291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFC8B78-9B41-4644-BD31-5E93CD895291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFC8B78-9B41-4644-BD31-5E93CD895291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFC8B78-9B41-4644-BD31-5E93CD895291}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC492E65-7EA3-4241-964A-3A00AD1B6BE5}
+	EndGlobalSection
+EndGlobal
