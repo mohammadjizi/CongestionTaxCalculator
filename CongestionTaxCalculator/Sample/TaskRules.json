@@ -1,0 +1,344 @@
+{
+  {
+    "id": "1",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule1",
+        "LocalParams": [
+          {
+            "Name": "hour",
+            "Expression": "6"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "00"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "29"
+          },
+          {
+            "Name": "output",
+            "Expression": "8"
+          }
+        ],
+        "Expression": "input1.Hour == hour && input1.Minute >= startMinute && input1.Minute <= endMinute",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule2",
+        "LocalParams": [
+          {
+            "Name": "hour",
+            "Expression": "6"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "30"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "59"
+          },
+          {
+            "Name": "output",
+            "Expression": "13"
+          }
+        ],
+        "Expression": "input1.Hour == hour && input1.Minute >= startMinute && input1.Minute <= endMinute",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+
+    "id": "3",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule3",
+        "LocalParams": [
+          {
+            "Name": "hour",
+            "Expression": "7"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "00"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "59"
+          },
+          {
+            "Name": "output",
+            "Expression": "18"
+          }
+        ],
+        "Expression": "input1.Hour == hour && input1.Minute >= startMinute && input1.Minute <= endMinute",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+
+    "id": "4",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule4",
+        "LocalParams": [
+          {
+            "Name": "hour",
+            "Expression": "8"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "00"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "29"
+          },
+          {
+            "Name": "output",
+            "Expression": "13"
+          }
+        ],
+        "Expression": "input1.Hour == hour && input1.Minute >= startMinute && input1.Minute <= endMinute",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+
+    "id": "5",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule5",
+        "LocalParams": [
+          {
+            "Name": "hour1",
+            "Expression": "8"
+          },
+          {
+            "Name": "hour2",
+            "Expression": "14"
+          },
+          {
+            "Name": "hour3",
+            "Expression": "19"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "30"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "59"
+          },
+          {
+            "Name": "output",
+            "Expression": "8"
+          }
+        ],
+        "Expression": "(input1.Hour >= hour1 && input1.Hour <= hour2 && input1.Minute >= startMinute && input1.Minute <= endMinute) || (input1.Hour >= hour3 && input1.Hour <= hour2)",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+
+    "id": "6",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule6",
+        "LocalParams": [
+          {
+            "Name": "hour",
+            "Expression": "15"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "00"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "29"
+          },
+          {
+            "Name": "output",
+            "Expression": "13"
+          }
+        ],
+        "Expression": "input1.Hour == hour && input1.Minute >= startMinute && input1.Minute <= endMinute",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+
+    "id": "7",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule7",
+        "LocalParams": [
+          {
+            "Name": "hour1",
+            "Expression": "15"
+          },
+          {
+            "Name": "hour2",
+            "Expression": "16"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "00"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "59"
+          },
+          {
+            "Name": "output",
+            "Expression": "18"
+          }
+        ],
+        "Expression": "(input1.Hour == hour1 && input1.Minute >= startMinute) || (input1.Hour == hour2 && input1.Minute <= endMinute)",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+
+    "id": "8",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule8",
+        "LocalParams": [
+          {
+            "Name": "hour",
+            "Expression": "17"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "00"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "59"
+          },
+          {
+            "Name": "output",
+            "Expression": "13"
+          }
+        ],
+        "Expression": "input1.Hour == hour && input1.Minute >= startMinute && input1.Minute <= endMinute",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "city": "Gothenburg",
+    "Rules": [
+      {
+        "RuleName": "Rule9",
+        "LocalParams": [
+          {
+            "Name": "hour",
+            "Expression": "18"
+          },
+          {
+            "Name": "startMinute",
+            "Expression": "00"
+          },
+          {
+            "Name": "endMinute",
+            "Expression": "29"
+          },
+          {
+            "Name": "output",
+            "Expression": "8"
+          }
+        ],
+        "Expression": "input1.Hour == hour && input1.Minute >= startMinute && input1.Minute <= endMinute",
+        "Actions": {
+          "OnSuccess": {
+            "Name": "OutputExpression",
+            "Context": {
+              "Expression": "output"
+            }
+          }
+        }
+      }
+    ]
+  }
+  }
